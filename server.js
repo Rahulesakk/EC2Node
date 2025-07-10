@@ -3,7 +3,7 @@ const cluster = require('cluster')
 const os = require('os')
 require('dotenv').config();
 const BookRoutes = require("./routes/book.routes")
-const connectMongoDB = require("../my-node-server/utils/database")
+const connectMongoDB = require("./utils/database")
 
 const numCpus = os.cpus().length
 
